@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinishLine : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class FinishLine : MonoBehaviour
         {if(other.CompareTag("Player"))
             {
                 Debug.Log("완주했습니다");
+                SceneManager.LoadScene(0);
             }
             
         }
